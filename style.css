@@ -1,0 +1,458 @@
+/* Reset default margins/paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f4f4f4;
+  z-index: 1000;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+/* Logo and Name */
+.logo-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-name img {
+  width: 50px;
+  height: auto;
+}
+
+.logo-name h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #777;
+}
+
+/* Call to Action Button */
+.cta-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #555;
+}
+
+/* Center the container and image */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image-container img {
+  width:100%;
+  height: auto;
+  display:block;
+}
+
+
+/* Overlay text in the center of image */
+.overlay-text {
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 2.5rem;
+  font-family: poppins;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+/* General Page Setup */
+body.about-page {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8; /* Light neutral background */
+  color: #333; /* Dark gray text for readability */
+  line-height: 1.5; /* Slightly tighter line height for compactness */
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; /* Align content at the top */
+  overflow-x: hidden;
+}
+
+/* Main Container */
+.main {
+  width: 100%;
+  max-width: 1000px;
+  padding: 60px 20px 40px; /* Reduced padding for compact feel */
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+/* About Container */
+.about-container {
+  width: 100%;
+  padding: 20px 10px;
+  text-align: center;
+  color: #333;
+  max-width: 800px; /* Ensure not too wide */
+  margin: 0 auto;
+}
+
+/* Heading 2 - Main Title */
+.about-container h2 {
+  font-size: 28px; /* Smaller font size */
+  font-weight: 700;
+  color: #444; /* Slightly lighter gray for better contrast */
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05); /* Subtle text shadow */
+}
+
+/* Paragraph */
+.about-container p {
+  font-size: 16px; /* Smaller text for more compact feel */
+  color: #555;
+  margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+/* Subheading */
+.about-container h3 {
+  font-size: 24px; /* Slightly smaller subheading */
+  font-weight: 600;
+  color: #444; /* Slightly lighter gray for better contrast */
+  margin-top: 30px;
+  margin-bottom: 12px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* List Styling */
+.about-container ul {
+  list-style-type: none;
+  font-size: 16px; /* Smaller font size for list */
+  color: #555;
+  margin-bottom: 20px;
+  padding-left: 0;
+  line-height: 1.5;
+}
+
+.about-container ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+.about-container ul li::before {
+  content: "✦"; /* Elegant bullet point */
+  position: absolute;
+  left: 0;
+  color: #bfa839; /* Softer gold accent */
+  font-size: 18px;
+}
+
+/* Hover Effect on List Items */
+.about-container ul li:hover::before {
+  color: #d4af37; /* Darker gold on hover */
+}
+
+/* Emphasis text */
+.about-container b {
+  font-size: 18px; /* Smaller emphasis text */
+  font-weight: 700;
+  color: #d4af37; /* Gold color for emphasis */
+  display: block;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+
+body.design-page {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;  /* This ensures the page height can grow */
+    padding: 40px 20px;
+    overflow: scroll;
+}
+
+/* Center the main title */
+body.design-page h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+/* Wrapper to align the cards horizontally */
+.cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;  /* Space between cards */
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;  /* Allow cards to wrap on smaller screens */
+    padding-bottom: 40px; /* Ensure space at the bottom for scrolling */
+}
+
+/* Style for each individual card */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;  /* Fixed width for cards */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;  /* Space between rows if wrapping */
+}
+
+/* Image handling */
+.card img {
+    width: 100%;  /* Ensure image takes full width of the card */
+    height: 200px;  /* Fixed height for uniformity */
+    object-fit: cover;  /* Ensure images cover the area without distortion */
+}
+
+/* Title inside each card */
+.card h4 {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Hover effect for card */
+.card:hover {
+    transform: translateY(-10px);  /* Lift effect on hover */
+}
+
+/* Reviews Page Specific Styles */
+#reviews-page {
+  background-color: #f7f7f7;
+  padding-top: 40px;  /* Adds some space at the top */
+}
+
+/* Reviews Section Container */
+#reviews-page .review-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of cards */
+  justify-content: space-between; /* Distribute cards evenly */
+  gap: 30px; /* Spacing between the cards */
+}
+
+/* Title of the reviews section */
+#reviews-page .review-heading {
+  text-align: center; /* Centered heading */
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+  width: 100%; /* Ensure it stretches across the entire width */
+}
+
+/* Styling each testimonial card */
+#reviews-page .testimonial {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 100%; /* By default, take up full width */
+  max-width: 380px; /* Limit max width of each card */
+  flex: 1 1 calc(33% - 30px); /* Flex basis to fit cards in 3 per row */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Testimonial Text */
+#reviews-page .testimonial p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Testimonial Author Name */
+#reviews-page .testimonial p strong {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Rating styling */
+#reviews-page .rating {
+  color: #ffcc00; /* Yellow color for stars */
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* Scoped styles for Contact Page only */
+body#contact-page {
+  display: block; /* Only target the contact page */
+}
+
+/* Contact Page Container */
+body#contact-page #contact-page {
+  max-width: 800px; /* Reduced max-width for smaller page */
+  margin: 0 auto;
+  padding: 20px 15px; /* Reduced padding */
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Reduced top margin */
+  border-radius: 8px;
+  /* Remove min-height to fit content naturally */
+}
+
+/* Contact Page Heading */
+body#contact-page .contact-heading {
+  text-align: center;
+  font-size: 2rem; /* Smaller heading font */
+  color: #333;
+  margin-bottom: 20px; /* Reduced bottom margin */
+}
+
+/* Contact Form Styling */
+body#contact-page .contact-form {
+  margin-bottom: 30px; /* Reduced bottom margin */
+}
+
+body#contact-page .contact-form h2 {
+  font-size: 1.5rem; /* Smaller font for subheading */
+  margin-bottom: 10px;
+  color: #333;
+}
+
+body#contact-page .contact-form label {
+  display: block;
+  margin-bottom: 8px; /* Reduced margin */
+  font-weight: bold;
+  color: #555;
+}
+
+body#contact-page .contact-form input,
+body#contact-page .contact-form textarea {
+  width: 100%;
+  padding: 10px; /* Reduced padding */
+  margin-bottom: 15px; /* Reduced margin */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem; /* Slightly smaller font */
+}
+
+body#contact-page .contact-form textarea {
+  resize: vertical;
+  height: 100px; /* Reduced height of textarea */
+}
+
+body#contact-page .contact-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 25px; /* Reduced button padding */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem; /* Smaller button font */
+  transition: background-color 0.3s;
+}
+
+body#contact-page .contact-form button:hover {
+  background-color: #45a049;
+}
+
+/* Contact Info Section */
+body#contact-page .contact-info {
+  text-align: center;
+  margin-top: 20px; /* Reduced top margin */
+}
+
+body#contact-page .contact-info p {
+  font-size: 1rem; /* Slightly smaller font */
+  margin-bottom: 8px; /* Reduced margin */
+  color: #555;
+}
+
+body#contact-page .contact-info strong {
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+
+
